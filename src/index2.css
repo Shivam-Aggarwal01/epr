@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at 20% -10%, rgba(22, 163, 74, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(134, 239, 172, 0.18), transparent 28%),
+    linear-gradient(180deg, #f8fffb 0%, #f4fbf7 40%, #f9fdfa 100%);
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-eco-600 text-white rounded-lg hover:bg-eco-700 transition-all font-medium text-sm sm:text-base shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 border border-eco-300 text-eco-700 rounded-lg hover:bg-eco-50 transition-colors font-medium text-sm sm:text-base;
+  }
+  
+  .card {
+    @apply bg-white/95 backdrop-blur-sm rounded-xl border border-eco-100 shadow-sm hover:shadow-md transition-all p-4 sm:p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-3 sm:px-4 py-2 border border-eco-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-eco-400 focus:border-eco-400 text-sm sm:text-base;
+  }
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-2xl sm:text-3xl;
+  }
+  
+  h2 {
+    @apply text-xl sm:text-2xl;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Ensure forms are touch-friendly */
+@media (max-width: 768px) {
+  input, textarea, select {
+    min-height: 44px;
+    font-size: 16px;
+  }
+}

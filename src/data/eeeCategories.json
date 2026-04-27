@@ -1,0 +1,1615 @@
+{
+  "categories": [
+    {
+      "id": "ITEW1",
+      "categoryName": "Centralized data processing: Mainframe",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 10,
+      "sop": "1. Segregate mainframe components\n2. Remove cooling systems\n3. Extract PCBs and storage devices\n4. Collect precious metals\n5. Crush and sort by material type",
+      "segregationDetails": {
+        "gold": "15-25 g/kg",
+        "silver": "40-80 g/kg",
+        "copper": "100-150 g/kg",
+        "plastics": "200-300 g/kg",
+        "heavyMetals": "Cadmium, Lead, Mercury - Hazardous"
+      },
+      "description": "Large-scale data processing systems with complex electronics"
+    },
+    {
+      "id": "ITEW2",
+      "categoryName": "Personal Computers (Desktop)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 6,
+      "sop": "1. Backup data and secure erase\n2. Remove hard drives\n3. Disassemble into components\n4. Separate metals, plastics, glass\n5. Extract precious metals from PCBs",
+      "segregationDetails": {
+        "gold": "10-15 g/kg",
+        "silver": "30-50 g/kg",
+        "copper": "80-120 g/kg",
+        "aluminum": "150-200 g/kg",
+        "plastics": "300-400 g/kg"
+      },
+      "description": "Desktop computers with CPU, motherboard, and peripherals"
+    },
+    {
+      "id": "ITEW3",
+      "categoryName": "Laptop Computers",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Secure data deletion\n2. Remove battery carefully\n3. Disassemble screen and casing\n4. Extract motherboard and hard drive\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "12-18 g/kg",
+        "silver": "35-60 g/kg",
+        "copper": "90-130 g/kg",
+        "plastics": "250-350 g/kg",
+        "lithium": "Battery - Hazardous"
+      },
+      "description": "Portable computing devices with integrated components"
+    },
+    {
+      "id": "ITEW4",
+      "categoryName": "Notebook Computers",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Power down completely\n2. Remove battery and SSD\n3. Disassemble carefully\n4. Segregate by material\n5. Extract precious metals",
+      "segregationDetails": {
+        "gold": "12-18 g/kg",
+        "silver": "35-60 g/kg",
+        "copper": "90-130 g/kg",
+        "plastics": "250-350 g/kg",
+        "rareEarthElements": "Magnets - 5-10 g/kg"
+      },
+      "description": "Smaller notebook form factor computing devices"
+    },
+    {
+      "id": "ITEW5",
+      "categoryName": "Notepad Computers",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Secure data wipe\n2. Disassemble display and body\n3. Extract internal components\n4. Recover precious materials",
+      "segregationDetails": {
+        "gold": "8-12 g/kg",
+        "silver": "25-45 g/kg",
+        "copper": "70-100 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Tablet and notepad computing devices"
+    },
+    {
+      "id": "ITEW6",
+      "categoryName": "Printers (including cartridges)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 10,
+      "sop": "1. Drain ink/toner safely\n2. Collect cartridges separately\n3. Remove PCBs and metal parts\n4. Segregate plastic and paper components\n5. Recover metals from cartridges",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "10-20 g/kg",
+        "copper": "30-50 g/kg",
+        "plastics": "400-500 g/kg",
+        "ink/toner": "Hazardous - separate handling"
+      },
+      "description": "Desktop and network printers with cartridges"
+    },
+    {
+      "id": "ITEW7",
+      "categoryName": "Copying Equipment",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 8,
+      "sop": "1. Empty toner/ink containers\n2. Disassemble mechanical parts\n3. Remove electronic components\n4. Segregate by material type\n5. Recover copper and metals",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "8-15 g/kg",
+        "copper": "40-60 g/kg",
+        "plastics": "350-450 g/kg",
+        "toner": "Hazardous"
+      },
+      "description": "Photocopier machines and related equipment"
+    },
+    {
+      "id": "ITEW8",
+      "categoryName": "Electrical and Electronic Typewriters",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Remove ribbon and correction tape\n2. Disassemble keyboard and mechanism\n3. Extract PCBs and motors\n4. Recover metals and plastics",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "300-400 g/kg",
+        "iron": "200-300 g/kg"
+      },
+      "description": "Electronic typewriter machines"
+    },
+    {
+      "id": "ITEW9",
+      "categoryName": "User Terminals and Systems",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 6,
+      "sop": "1. Disconnect all connections\n2. Remove storage devices\n3. Extract memory modules\n4. Segregate components\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "10-15 g/kg",
+        "silver": "30-50 g/kg",
+        "copper": "80-120 g/kg",
+        "plastics": "250-350 g/kg"
+      },
+      "description": "Terminal systems and user input devices"
+    },
+    {
+      "id": "ITEW10",
+      "categoryName": "Facsimile (Fax Machines)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 10,
+      "sop": "1. Remove paper and chemicals\n2. Extract thermal head carefully\n3. Disassemble electronic components\n4. Segregate metals and plastics\n5. Handle chemicals safely",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "8-15 g/kg",
+        "copper": "35-50 g/kg",
+        "plastics": "300-400 g/kg",
+        "chemicalWaste": "Thermal paper - Hazardous"
+      },
+      "description": "Facsimile transmission devices"
+    },
+    {
+      "id": "ITEW11",
+      "categoryName": "Telex",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect power and lines\n2. Remove mechanical parts\n3. Extract electronic components\n4. Recover metals and plastics",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "30-50 g/kg",
+        "plastics": "200-300 g/kg",
+        "iron": "300-400 g/kg"
+      },
+      "description": "Telex communication equipment"
+    },
+    {
+      "id": "ITEW12",
+      "categoryName": "Telephones (Landline)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 9,
+      "sop": "1. Remove battery if present\n2. Disassemble housing\n3. Extract circuitry\n4. Segregate materials\n5. Recover metals",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "2-5 g/kg",
+        "copper": "15-30 g/kg",
+        "plastics": "250-350 g/kg",
+        "lead": "Hazardous in solder"
+      },
+      "description": "Conventional telephone devices"
+    },
+    {
+      "id": "ITEW13",
+      "categoryName": "Pay Telephones",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 9,
+      "sop": "1. Empty coin collection box\n2. Disassemble phone and housing\n3. Extract electronic components\n4. Segregate by material",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "2-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "150-250 g/kg",
+        "metal": "400-500 g/kg"
+      },
+      "description": "Public pay telephone systems"
+    },
+    {
+      "id": "ITEW14",
+      "categoryName": "Cordless Telephones",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 9,
+      "sop": "1. Remove batteries carefully\n2. Disassemble handset and base\n3. Extract PCBs\n4. Segregate materials\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "250-350 g/kg",
+        "nickelCadmium": "Battery - Hazardous"
+      },
+      "description": "Wireless telephone handsets"
+    },
+    {
+      "id": "ITEW15",
+      "categoryName": "Cellular Telephones (Feature phones)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 7,
+      "sop": "1. Remove battery and SIM\n2. Data wipe securely\n3. Disassemble carefully\n4. Extract components\n5. Recover precious metals and materials",
+      "segregationDetails": {
+        "gold": "3-6 g/kg",
+        "silver": "8-15 g/kg",
+        "copper": "30-60 g/kg",
+        "cobalt": "Battery - Hazardous",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Feature mobile phones"
+    },
+    {
+      "id": "ITEW16",
+      "categoryName": "Cellular Telephones (Smart phones)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Secure data deletion\n2. Remove battery safely\n3. Remove display carefully\n4. Extract internals\n5. Recover rare earth elements and precious metals",
+      "segregationDetails": {
+        "gold": "5-10 g/kg",
+        "silver": "15-30 g/kg",
+        "copper": "50-100 g/kg",
+        "rareEarthElements": "10-20 g/kg",
+        "lithium": "Battery - Hazardous"
+      },
+      "description": "Smartphone devices with advanced components"
+    },
+    {
+      "id": "ITEW17",
+      "categoryName": "Answering Systems",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Remove storage media\n2. Disassemble housing\n3. Extract electronic components\n4. Segregate materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "2-5 g/kg",
+        "copper": "15-30 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Automatic telephone answering devices"
+    },
+    {
+      "id": "ITEW18",
+      "categoryName": "Bluetooth Enabled Devices",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 3,
+      "sop": "1. Remove power source\n2. Disassemble device\n3. Extract PCBs\n4. Segregate components",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "15-40 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Various Bluetooth-enabled wireless devices"
+    },
+    {
+      "id": "ITEW19",
+      "categoryName": "Telecommunication Antennas",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 7,
+      "sop": "1. Safely remove from installation\n2. Disassemble antenna elements\n3. Extract copper and aluminum\n4. Recover materials",
+      "segregationDetails": {
+        "copper": "300-500 g/kg",
+        "aluminum": "200-400 g/kg",
+        "gold": "0.5-2 g/kg",
+        "plastics": "50-100 g/kg"
+      },
+      "description": "Communication antenna systems"
+    },
+    {
+      "id": "ITEW20",
+      "categoryName": "Transmitters",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Safely power down\n2. Disassemble transmitter\n3. Extract components\n4. Segregate by material type",
+      "segregationDetails": {
+        "copper": "100-200 g/kg",
+        "aluminum": "50-150 g/kg",
+        "gold": "1-3 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Radio and communication transmitters"
+    },
+    {
+      "id": "ITEW21",
+      "categoryName": "Walkie Talkie",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Remove batteries\n2. Disassemble housing\n3. Extract PCBs and components\n4. Recover materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "2-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "200-300 g/kg",
+        "nickelCadmium": "Battery - Hazardous"
+      },
+      "description": "Portable two-way radio communication devices"
+    },
+    {
+      "id": "ITEW22",
+      "categoryName": "Wi-Fi/Wireless Enabled Devices",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 3,
+      "sop": "1. Power down safely\n2. Remove power source/battery\n3. Disassemble device\n4. Extract Wi-Fi module and components",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "20-50 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Various wireless-enabled devices"
+    },
+    {
+      "id": "ITEW23",
+      "categoryName": "Radio/Satellite Telephone",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 7,
+      "sop": "1. Remove batteries\n2. Disassemble antenna\n3. Extract PCBs\n4. Separate materials",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "40-80 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Satellite and long-distance communication phones"
+    },
+    {
+      "id": "ITEW24",
+      "categoryName": "GPS (Global Positioning System)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Power down device\n2. Remove battery\n3. Disassemble carefully\n4. Extract PCBs and components\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "2-4 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "30-60 g/kg",
+        "rareEarthElements": "5-10 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "GPS receiver and navigation devices"
+    },
+    {
+      "id": "ITEW25",
+      "categoryName": "UPS (Uninterruptible Power Supply)",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": "5-7",
+      "sop": "1. Safely discharge batteries\n2. Remove battery pack\n3. Disassemble housing\n4. Extract PCBs and transformers\n5. Recover copper and metals",
+      "segregationDetails": {
+        "lead": "Battery - Hazardous (lead-acid)",
+        "copper": "100-200 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.5-2 g/kg",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "UPS systems for continuous power supply. Life: 5 years (≤2 KVA), 7 years (>2 KVA)"
+    },
+    {
+      "id": "ITEW26",
+      "categoryName": "Inverter",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": "5-7",
+      "sop": "1. Disconnect from power\n2. Discharge capacitors safely\n3. Remove battery if installed\n4. Disassemble transformer and PCBs\n5. Recover copper and metals",
+      "segregationDetails": {
+        "copper": "150-250 g/kg",
+        "aluminum": "100-150 g/kg",
+        "gold": "0.5-2 g/kg",
+        "iron": "200-300 g/kg",
+        "battery": "Hazardous"
+      },
+      "description": "DC to AC power conversion devices. Life: 5 years (≤2 KVA), 7 years (>2 KVA)"
+    },
+    {
+      "id": "ITEW27",
+      "categoryName": "Modems",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from all connections\n2. Remove power adapter\n3. Open housing carefully\n4. Extract PCBs\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "20-50 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Data modem and network interface devices"
+    },
+    {
+      "id": "ITEW28",
+      "categoryName": "Electronic Data Storage Devices",
+      "section": "Information Technology and Telecommunication Equipment",
+      "averageLife": "5-10",
+      "sop": "1. Secure data wipe for all devices\n2. Disassemble carefully\n3. Extract memory chips\n4. Separate metals and plastics\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "5-15 g/kg (flash drives), 2-8 g/kg (servers)",
+        "silver": "10-25 g/kg (flash drives), 5-15 g/kg (servers)",
+        "copper": "30-80 g/kg (flash drives), 50-150 g/kg (servers)",
+        "rareEarthElements": "Magnets - 5-10 g/kg"
+      },
+      "description": "Flash drives and storage servers. Life: 5 years (small devices), 10 years (servers)"
+    },
+    {
+      "id": "CEEW1",
+      "categoryName": "Television Sets",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 9,
+      "sop": "1. Safely remove from power\n2. Extract CRT or LCD panel carefully\n3. Remove flyback transformer\n4. Extract PCBs\n5. Recover materials (mercury - handle separately)",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "30-60 g/kg",
+        "glass": "3000-5000 g/kg",
+        "mercury": "Hazardous (old CRT)",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "LCD, LED, and legacy television sets"
+    },
+    {
+      "id": "CEEW2",
+      "categoryName": "Refrigerator",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 10,
+      "sop": "1. Turn off and disconnect\n2. Drain refrigerant safely (CFC - hazardous)\n3. Remove compressor\n4. Extract PCB and thermostat\n5. Segregate steel, copper, and plastics",
+      "segregationDetails": {
+        "steel": "3000-5000 g/kg",
+        "copper": "50-100 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "refrigerant": "Hazardous - CFC/HFC",
+        "insulation": "Foam - Hazardous"
+      },
+      "description": "Refrigeration appliances"
+    },
+    {
+      "id": "CEEW3",
+      "categoryName": "Washing Machine",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 9,
+      "sop": "1. Disconnect from power and water\n2. Drain water completely\n3. Remove motor and drum\n4. Extract PCBs and components\n5. Segregate steel, copper, and other materials",
+      "segregationDetails": {
+        "steel": "4000-6000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Automatic and semi-automatic washing machines"
+    },
+    {
+      "id": "CEEW4",
+      "categoryName": "Air-Conditioner (Non-centralized)",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 10,
+      "sop": "1. Recover refrigerant safely (CFC/HFC - hazardous)\n2. Remove compressor\n3. Extract PCBs and electrical components\n4. Disassemble heat exchangers\n5. Segregate copper, aluminum, and steel",
+      "segregationDetails": {
+        "copper": "200-400 g/kg",
+        "aluminum": "300-500 g/kg",
+        "steel": "2000-4000 g/kg",
+        "gold": "0.5-2 g/kg",
+        "refrigerant": "Hazardous - CFC/HFC",
+        "oil": "Compressor oil - Hazardous"
+      },
+      "description": "Window and split air conditioning units"
+    },
+    {
+      "id": "CEEW5",
+      "categoryName": "Fluorescent and Mercury Containing Lamps",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 2,
+      "sop": "1. Handle with extreme care\n2. Segregate unbroken lamps\n3. Extract mercury vapor tube\n4. Recover phosphor coating\n5. Separate ballast (electromagnetic or electronic)",
+      "segregationDetails": {
+        "mercury": "5-15 mg per lamp - HAZARDOUS",
+        "phosphor": "1-3 g/kg",
+        "copper": "5-20 g/kg",
+        "glass": "500-800 g/kg",
+        "lead": "In solder - Hazardous"
+      },
+      "description": "CFL and fluorescent lamps with mercury"
+    },
+    {
+      "id": "CEEW6",
+      "categoryName": "Screen, Electronic Photo frames, Display Panels, Monitors",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 7,
+      "sop": "1. Power off and disconnect\n2. Remove backlight (LED/CCFL)\n3. Extract LCD panel carefully\n4. Remove PCBs and power supply\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "40-80 g/kg",
+        "glass": "1000-2000 g/kg",
+        "mercury": "Hazardous (CCFL backlight)",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "LCD/LED monitors and display panels"
+    },
+    {
+      "id": "CEEW7",
+      "categoryName": "Radio Sets",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 8,
+      "sop": "1. Remove batteries\n2. Disassemble housing\n3. Extract tuner and PCBs\n4. Separate speaker from electronics\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "200-300 g/kg",
+        "iron": "100-200 g/kg"
+      },
+      "description": "Radio receiver equipment"
+    },
+    {
+      "id": "CEEW8",
+      "categoryName": "Set Top Boxes",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 8,
+      "sop": "1. Disconnect from power and cables\n2. Remove hard drive if present\n3. Open case carefully\n4. Extract PCBs and components\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "30-60 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Cable and satellite set-top boxes"
+    },
+    {
+      "id": "CEEW9",
+      "categoryName": "Video Cameras",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 5,
+      "sop": "1. Remove battery\n2. Eject storage media\n3. Disassemble carefully\n4. Extract lens and CCD/CMOS sensor\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "30-60 g/kg",
+        "glass": "500-800 g/kg",
+        "plastics": "150-250 g/kg",
+        "lithium": "Battery - Hazardous"
+      },
+      "description": "Camcorder and video recording devices"
+    },
+    {
+      "id": "CEEW10",
+      "categoryName": "Video Recorders",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Eject tape/media\n3. Remove tape mechanism\n4. Extract PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "25-50 g/kg",
+        "plastics": "250-350 g/kg",
+        "iron": "300-400 g/kg"
+      },
+      "description": "VCR and video recording equipment"
+    },
+    {
+      "id": "CEEW11",
+      "categoryName": "Hi-Fi Recorders",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 5,
+      "sop": "1. Power off and disconnect\n2. Remove tape/media\n3. Extract motor and head\n4. Remove PCBs\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "30-50 g/kg",
+        "plastics": "200-300 g/kg",
+        "iron": "400-500 g/kg"
+      },
+      "description": "High-fidelity recording devices"
+    },
+    {
+      "id": "CEEW12",
+      "categoryName": "Audio Amplifiers",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Remove heatsinks\n3. Extract transformer\n4. Remove PCBs\n5. Recover copper and materials",
+      "segregationDetails": {
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.5-2 g/kg",
+        "iron": "500-800 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Audio amplification equipment"
+    },
+    {
+      "id": "CEEW13",
+      "categoryName": "CCTV Camera with DVR & NVR",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 7,
+      "sop": "1. Disconnect power and cables\n2. Remove camera lens\n3. Extract storage devices\n4. Remove PCBs\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "50-100 g/kg",
+        "plastics": "150-250 g/kg",
+        "glass": "100-200 g/kg"
+      },
+      "description": "Security camera systems with recording equipment"
+    },
+    {
+      "id": "CEEW14",
+      "categoryName": "Digital Sound and Video Recorder",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 7,
+      "sop": "1. Power off and disconnect\n2. Remove media\n3. Extract mechanical components\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "30-60 g/kg",
+        "plastics": "200-300 g/kg",
+        "iron": "300-400 g/kg"
+      },
+      "description": "Digital media recording equipment"
+    },
+    {
+      "id": "CEEW15",
+      "categoryName": "Solar Panels/Photovoltaic Cells",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 15,
+      "sop": "1. Disconnect from electrical system\n2. Separate glass and frame\n3. Extract silicon cells\n4. Remove junction box and wiring\n5. Recover materials (silicon - valuable)",
+      "segregationDetails": {
+        "silicon": "200-300 g/kg",
+        "glass": "3000-5000 g/kg",
+        "aluminum": "100-200 g/kg",
+        "copper": "20-40 g/kg",
+        "silver": "5-15 g/kg",
+        "lead": "Solder - Hazardous"
+      },
+      "description": "Solar photovoltaic panels and cells"
+    },
+    {
+      "id": "CEEW16",
+      "categoryName": "Luminaires for Fluorescent Lamps",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 2,
+      "sop": "1. Remove lamp carefully\n2. Disassemble fixture\n3. Extract ballast (electromagnetic or electronic)\n4. Separate materials\n5. Handle mercury safely if present",
+      "segregationDetails": {
+        "mercury": "Hazardous (if present)",
+        "copper": "30-60 g/kg",
+        "aluminum": "100-200 g/kg",
+        "steel": "300-500 g/kg",
+        "glass": "200-400 g/kg"
+      },
+      "description": "Fluorescent lamp fixtures and luminaires"
+    },
+    {
+      "id": "CEEW17",
+      "categoryName": "High Intensity Discharge Lamps",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 2,
+      "sop": "1. Handle with extreme care\n2. Extract discharge tube\n3. Remove ballast\n4. Separate materials\n5. Handle mercury and heavy metals safely",
+      "segregationDetails": {
+        "mercury": "20-50 mg - Hazardous",
+        "xenon": "Hazardous",
+        "glass": "300-500 g/kg",
+        "copper": "20-40 g/kg",
+        "lead": "Solder - Hazardous"
+      },
+      "description": "High intensity discharge lamps (HID)"
+    },
+    {
+      "id": "CEEW18",
+      "categoryName": "Low Pressure Sodium Lamps",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 2,
+      "sop": "1. Handle carefully\n2. Extract sodium tube\n3. Remove ballast\n4. Separate components\n5. Handle sodium safely",
+      "segregationDetails": {
+        "sodium": "Hazardous",
+        "glass": "300-500 g/kg",
+        "copper": "15-30 g/kg",
+        "lead": "Solder - Hazardous"
+      },
+      "description": "Low pressure sodium vapor lamps"
+    },
+    {
+      "id": "CEEW19",
+      "categoryName": "LED Lighting Equipment",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": "3-5",
+      "sop": "1. Power off safely\n2. Disassemble LED module\n3. Extract driver circuit\n4. Separate materials\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "200-300 g/kg",
+        "rareEarthElements": "2-5 g/kg"
+      },
+      "description": "LED lighting for consumer and professional use. Life: 3 years (Consumer), 5 years (Professional)"
+    },
+    {
+      "id": "CEEW20",
+      "categoryName": "Digital Camera",
+      "section": "Consumer Electrical and Electronics",
+      "averageLife": 5,
+      "sop": "1. Remove battery\n2. Eject memory card\n3. Disassemble carefully\n4. Extract CMOS sensor and lens\n5. Recover precious metals",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "30-60 g/kg",
+        "glass": "300-500 g/kg",
+        "plastics": "150-250 g/kg",
+        "lithium": "Battery - Hazardous"
+      },
+      "description": "Digital photography cameras"
+    },
+    {
+      "id": "LSEEW1",
+      "categoryName": "Large Cooling Appliances",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Recover refrigerant safely (CFC/HFC)\n2. Remove compressor\n3. Extract PCBs\n4. Disassemble heat exchangers\n5. Segregate steel, copper, aluminum",
+      "segregationDetails": {
+        "steel": "5000-7000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "200-400 g/kg",
+        "refrigerant": "Hazardous - CFC/HFC",
+        "oil": "Compressor oil - Hazardous"
+      },
+      "description": "Industrial and commercial cooling equipment"
+    },
+    {
+      "id": "LSEEW2",
+      "categoryName": "Freezers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Recover refrigerant safely\n2. Remove compressor\n3. Extract PCBs and components\n4. Segregate materials\n5. Drain oil",
+      "segregationDetails": {
+        "steel": "4000-6000 g/kg",
+        "copper": "80-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "refrigerant": "Hazardous",
+        "oil": "Hazardous"
+      },
+      "description": "Deep freezer and industrial freezing equipment"
+    },
+    {
+      "id": "LSEEW3",
+      "categoryName": "Large Appliances for Refrigeration and Food Storage",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect and recover refrigerant\n2. Remove cooling components\n3. Extract PCBs\n4. Segregate steel and other metals\n5. Drain oils and fluids",
+      "segregationDetails": {
+        "steel": "4000-6000 g/kg",
+        "copper": "80-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "refrigerant": "Hazardous"
+      },
+      "description": "Commercial refrigeration appliances"
+    },
+    {
+      "id": "LSEEW4",
+      "categoryName": "Clothes Dryers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove heating element\n3. Extract motor and drum\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "3000-5000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Electric clothes drying machines"
+    },
+    {
+      "id": "LSEEW5",
+      "categoryName": "Dish Washing Machines",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power and water\n2. Remove heating element\n3. Extract motor and pump\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "3000-5000 g/kg",
+        "copper": "150-250 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Automatic dishwashing machines"
+    },
+    {
+      "id": "LSEEW6",
+      "categoryName": "Electric Cookers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Remove heating elements\n3. Extract temperature controls\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electric cooking appliances"
+    },
+    {
+      "id": "LSEEW7",
+      "categoryName": "Electric Stoves",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Safely disconnect from power\n2. Remove heating coils\n3. Extract control board\n4. Remove thermostat\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "3000-4000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "50-100 g/kg",
+        "nickel": "20-50 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electric cooking stove units"
+    },
+    {
+      "id": "LSEEW8",
+      "categoryName": "Electric Hot Plates",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Remove heating element\n3. Extract thermostat\n4. Remove casing\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "50-100 g/kg",
+        "aluminum": "100-150 g/kg",
+        "nickel": "10-20 g/kg",
+        "plastics": "50-100 g/kg"
+      },
+      "description": "Portable electric hot plate cookers"
+    },
+    {
+      "id": "LSEEW9",
+      "categoryName": "Microwave Ovens",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect and discharge capacitor\n2. Remove magnetron (emit microwave - hazardous)\n3. Extract transformer\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "150-250 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "magnetron": "Hazardous - contains beryllium"
+      },
+      "description": "Microwave cooking ovens"
+    },
+    {
+      "id": "LSEEW10",
+      "categoryName": "Large Food Processing Appliances",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove processing components\n3. Extract motor\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "3000-5000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Industrial food preparation equipment"
+    },
+    {
+      "id": "LSEEW11",
+      "categoryName": "Electric Heating Appliances",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 8,
+      "sop": "1. Safely disconnect from power\n2. Drain any fluids\n3. Remove heating elements\n4. Extract thermostat and controls\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-4000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "oil": "Heating oil - Hazardous",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Electric space heating appliances"
+    },
+    {
+      "id": "LSEEW12",
+      "categoryName": "Electric Radiators",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Drain heating fluid\n3. Remove heating elements\n4. Extract thermostatic valve\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "500-1000 g/kg",
+        "oil": "Heating oil - Hazardous",
+        "plastics": "50-100 g/kg"
+      },
+      "description": "Electric radiant heating systems"
+    },
+    {
+      "id": "LSEEW13",
+      "categoryName": "Large Heating Appliances for Rooms/Furniture",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Remove heating elements\n3. Extract control system\n4. Remove upholstery/covering\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "50-100 g/kg",
+        "textiles": "500-1000 g/kg",
+        "foam": "500-1000 g/kg (hazardous)",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Large heating appliances and furniture"
+    },
+    {
+      "id": "LSEEW14",
+      "categoryName": "Electric Fans",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 15,
+      "sop": "1. Disconnect from power\n2. Disassemble blade and housing\n3. Remove motor\n4. Extract capacitor\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "200-400 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Electric ventilation fans"
+    },
+    {
+      "id": "LSEEW15",
+      "categoryName": "Fanning, Exhaust and Air Conditioning Equipment",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove fan blades and housing\n3. Extract motor and capacitor\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "300-500 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Ventilation and air circulation equipment"
+    },
+    {
+      "id": "LSEEW16",
+      "categoryName": "Vacuum Cleaners",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Empty dust bin\n3. Remove motor assembly\n4. Extract filter and hose\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Vacuum cleaning equipment"
+    },
+    {
+      "id": "LSEEW17",
+      "categoryName": "Carpet Sweepers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove brush and collection bin\n3. Extract motor\n4. Remove roller and belts\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "300-600 g/kg",
+        "copper": "50-100 g/kg",
+        "aluminum": "50-100 g/kg",
+        "rubber": "200-300 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Carpet and floor sweeping equipment"
+    },
+    {
+      "id": "LSEEW18",
+      "categoryName": "Cleaning Appliances",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power and water\n2. Remove cleaning solution tank\n3. Extract motor and pump\n4. Remove hose and attachments\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "plastic": "300-400 g/kg"
+      },
+      "description": "Various electrical cleaning appliances"
+    },
+    {
+      "id": "LSEEW19",
+      "categoryName": "Sewing, Knitting, and Weaving Equipment",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Remove needle and presser foot\n3. Extract motor and mechanical parts\n4. Remove PCBs if electronic\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-1500 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Sewing and fabric processing equipment"
+    },
+    {
+      "id": "LSEEW20",
+      "categoryName": "Iron and Garment Care Appliances",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Allow to cool completely\n3. Remove heating element\n4. Extract thermostat\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "800-1200 g/kg",
+        "copper": "50-100 g/kg",
+        "aluminum": "100-200 g/kg",
+        "nickel": "10-30 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electrical irons and garment care devices"
+    },
+    {
+      "id": "LSEEW21",
+      "categoryName": "Grinders, Coffee Machines, and Container Processing Equipment",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Remove grinding burrs or brewing components\n3. Extract motor\n4. Remove PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Coffee and food processing equipment"
+    },
+    {
+      "id": "LSEEW22",
+      "categoryName": "Smoke Detector",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Remove battery\n2. Disassemble casing\n3. Extract ionization chamber (radioactive - hazardous)\n4. Remove PCBs\n5. Segregate materials carefully",
+      "segregationDetails": {
+        "americium": "Radioactive - Hazardous (Am-241)",
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Smoke detection and fire alarm systems"
+    },
+    {
+      "id": "LSEEW23",
+      "categoryName": "Heating Regulators",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Disassemble casing\n3. Extract PCBs and sensors\n4. Remove thermistor\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "30-60 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Heating system controls and regulators"
+    },
+    {
+      "id": "LSEEW24",
+      "categoryName": "Thermostats",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Open case carefully\n3. Extract mercury switch if present (hazardous)\n4. Remove PCB\n5. Segregate materials",
+      "segregationDetails": {
+        "mercury": "Hazardous (if mechanical thermostat)",
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "20-40 g/kg",
+        "plastics": "80-120 g/kg"
+      },
+      "description": "Thermostat control devices"
+    },
+    {
+      "id": "LSEEW25",
+      "categoryName": "Automatic Hot Drink Dispensers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power and water\n2. Drain fluid tanks\n3. Remove heating element\n4. Extract pump and valves\n5. Remove PCBs\n6. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "150-250 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Automatic beverage dispensing machines"
+    },
+    {
+      "id": "LSEEW26",
+      "categoryName": "Automatic Hot/Cold Bottle/Can Dispensers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 7,
+      "sop": "1. Disconnect from power\n2. Drain refrigerant if cooled\n3. Remove compressor and cooling system\n4. Extract PCBs and dispenser mechanism\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "150-250 g/kg",
+        "refrigerant": "Hazardous",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Beverage temperature control dispensers"
+    },
+    {
+      "id": "LSEEW27",
+      "categoryName": "Automatic Solid Product Dispensers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Empty product hopper\n3. Remove dispensing mechanism\n4. Extract motor and PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Automatic snack and product dispensing machines"
+    },
+    {
+      "id": "LSEEW28",
+      "categoryName": "Automatic Money Dispensers",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Safely power down\n2. Remove cash hopper\n3. Extract dispenser mechanism\n4. Remove counting and sorting system\n5. Segregate materials and secure data devices",
+      "segregationDetails": {
+        "steel": "3000-4000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.5-2 g/kg",
+        "storage": "Data storage - secure erase required"
+      },
+      "description": "Automated Teller Machines (ATM)"
+    },
+    {
+      "id": "LSEEW29",
+      "categoryName": "General Automatic Dispensing Machines",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Empty product/contents\n3. Remove dispensing mechanism\n4. Extract electronic controls\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3500 g/kg",
+        "copper": "80-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Various types of automatic dispensing machines"
+    },
+    {
+      "id": "LSEEW30",
+      "categoryName": "Indoor Air Purifier",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove filter (may be hazardous - contaminated)\n3. Disassemble casing\n4. Extract motor and PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "300-500 g/kg",
+        "copper": "100-150 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "filter": "Hazardous - contaminated particles"
+      },
+      "description": "Air purification and filtration systems"
+    },
+    {
+      "id": "LSEEW31",
+      "categoryName": "Hair Dryer",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 3,
+      "sop": "1. Disconnect from power\n2. Allow to cool\n3. Remove heating element\n4. Extract motor\n5. Segregate materials",
+      "segregationDetails": {
+        "aluminum": "200-300 g/kg",
+        "copper": "80-150 g/kg",
+        "steel": "100-200 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "150-250 g/kg"
+      },
+      "description": "Electrical hair drying appliances"
+    },
+    {
+      "id": "LSEEW32",
+      "categoryName": "Electric Shaver",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 3,
+      "sop": "1. Remove battery/disconnect from power\n2. Disassemble head\n3. Remove cutting foils and blades\n4. Extract motor\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "100-200 g/kg",
+        "copper": "50-100 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electrical shaving devices"
+    },
+    {
+      "id": "LSEEW33",
+      "categoryName": "Electric Kettle",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Disconnect from power\n2. Cool completely\n3. Remove heating element\n4. Extract thermostat\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "400-600 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.1-0.5 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electric water heating kettles"
+    },
+    {
+      "id": "LSEEW34",
+      "categoryName": "Electronic Display Panels/Board/VDU",
+      "section": "Large and Small Electrical and Electronic Equipment",
+      "averageLife": 5,
+      "sop": "1. Power off and disconnect\n2. Remove backlight carefully\n3. Extract LCD panel\n4. Remove PCBs and power supply\n5. Recover materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "40-80 g/kg",
+        "glass": "1000-2000 g/kg",
+        "mercury": "Hazardous (CCFL)",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Electronic display and visual display units"
+    },
+    {
+      "id": "EETW1",
+      "categoryName": "Drills",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 8,
+      "sop": "1. Disconnect from power\n2. Remove drill bits\n3. Disassemble chuck and handle\n4. Extract motor and gearbox\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "50-100 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "100-200 g/kg"
+      },
+      "description": "Electric drilling tools"
+    },
+    {
+      "id": "EETW2",
+      "categoryName": "Saws",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove blade safely\n3. Disassemble housing\n4. Extract motor\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Electric saw equipment"
+    },
+    {
+      "id": "EETW3",
+      "categoryName": "Sewing Machines (Electric)",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 15,
+      "sop": "1. Disconnect from power\n2. Remove needle and presser foot\n3. Disassemble casing\n4. Extract motor\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "150-250 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "cast iron": "1000-2000 g/kg"
+      },
+      "description": "Electric sewing machines"
+    },
+    {
+      "id": "EETW4",
+      "categoryName": "Turning, Milling, Sanding Equipment",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Safely power down and lock\n2. Remove cutting/processing components\n3. Disassemble spindle\n4. Extract motor and gearbox\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "5000-8000 g/kg",
+        "cast iron": "2000-4000 g/kg",
+        "copper": "200-400 g/kg",
+        "aluminum": "200-300 g/kg",
+        "gold": "0.5-2 g/kg"
+      },
+      "description": "Metal and wood processing equipment"
+    },
+    {
+      "id": "EETW5",
+      "categoryName": "Riveting, Nailing, Screwing Tools",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove tool bits/dies\n3. Disassemble hammer or press mechanism\n4. Extract motor\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "2000-3000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.2-1 g/kg",
+        "plastics": "100-150 g/kg"
+      },
+      "description": "Fastening and joining tools"
+    },
+    {
+      "id": "EETW6",
+      "categoryName": "Welding, Soldering Equipment",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Allow to cool completely\n2. Disconnect from power and gas\n3. Remove electrode/torch\n4. Extract transformer\n5. Segregate materials",
+      "segregationDetails": {
+        "copper": "300-500 g/kg",
+        "steel": "1000-2000 g/kg",
+        "aluminum": "100-200 g/kg",
+        "gold": "0.5-2 g/kg",
+        "lead": "Solder - Hazardous"
+      },
+      "description": "Welding and joining equipment"
+    },
+    {
+      "id": "EETW7",
+      "categoryName": "Spraying, Dispersing Equipment",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove fluid container\n3. Clean nozzle and hose\n4. Extract motor and pump\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "500-1000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-200 g/kg",
+        "plastics": "200-300 g/kg",
+        "residue": "Hazardous - may contain chemicals"
+      },
+      "description": "Spray and dispersing application equipment"
+    },
+    {
+      "id": "EETW8",
+      "categoryName": "Lawn Mowers and Gardening Tools",
+      "section": "Electrical and Electronic Tools",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove blade safely\n3. Drain fuel/battery\n4. Extract motor and gearbox\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "150-250 g/kg",
+        "aluminum": "200-300 g/kg",
+        "gold": "0.2-1 g/kg",
+        "fuel": "Hazardous - drain completely"
+      },
+      "description": "Powered lawn and garden equipment"
+    },
+    {
+      "id": "TLSEW1",
+      "categoryName": "Electrical Trains or Car Racing Sets",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 2,
+      "sop": "1. Remove batteries\n2. Separate train/car components\n3. Disassemble motor\n4. Extract track and power supply\n5. Segregate materials",
+      "segregationDetails": {
+        "copper": "30-60 g/kg",
+        "steel": "200-400 g/kg",
+        "aluminum": "50-100 g/kg",
+        "plastic": "200-300 g/kg",
+        "battery": "Hazardous"
+      },
+      "description": "Electric toy train and racing set systems"
+    },
+    {
+      "id": "TLSEW2",
+      "categoryName": "Hand-Held Video Game Consoles",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 2,
+      "sop": "1. Remove batteries\n2. Disassemble casing\n3. Extract PCBs and screen\n4. Remove memory/storage\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "30-60 g/kg",
+        "plastics": "150-250 g/kg",
+        "battery": "Hazardous"
+      },
+      "description": "Portable video gaming devices"
+    },
+    {
+      "id": "TLSEW3",
+      "categoryName": "Video Game Cartridges/Media",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 2,
+      "sop": "1. Remove from console\n2. Disassemble cartridge/casing\n3. Extract circuit board\n4. Remove ROM/storage chip\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "20-50 g/kg",
+        "plastics": "200-300 g/kg"
+      },
+      "description": "Video game software media and cartridges"
+    },
+    {
+      "id": "TLSEW4",
+      "categoryName": "Sports Computers (Cycling, Diving, Running)",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 3,
+      "sop": "1. Remove battery\n2. Disconnect from power\n3. Disassemble casing\n4. Extract PCB and sensors\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "15-40 g/kg",
+        "plastics": "150-250 g/kg",
+        "battery": "Hazardous"
+      },
+      "description": "Wearable sports tracking and monitoring devices"
+    },
+    {
+      "id": "TLSEW5",
+      "categoryName": "Sports Equipment with Electronic Components",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 5,
+      "sop": "1. Remove battery or power source\n2. Carefully disassemble equipment\n3. Extract electronic components\n4. Segregate materials properly",
+      "segregationDetails": {
+        "gold": "0.5-2 g/kg",
+        "silver": "1-5 g/kg",
+        "copper": "20-50 g/kg",
+        "plastics": "200-400 g/kg",
+        "rubber": "100-200 g/kg"
+      },
+      "description": "Sports equipment with embedded electronics"
+    },
+    {
+      "id": "TLSEW6",
+      "categoryName": "Coin Slot Machines",
+      "section": "Toys, Leisure and Sports Equipment",
+      "averageLife": 8,
+      "sop": "1. Remove coins from hopper\n2. Disconnect from power\n3. Remove coin mechanism\n4. Extract motor and PCBs\n5. Segregate materials",
+      "segregationDetails": {
+        "steel": "1000-2000 g/kg",
+        "copper": "100-200 g/kg",
+        "aluminum": "100-150 g/kg",
+        "gold": "0.2-1 g/kg",
+        "coins": "Precious metals"
+      },
+      "description": "Coin-operated gaming and amusement machines"
+    },
+    {
+      "id": "MDW1",
+      "categoryName": "Radiotherapy Equipment",
+      "section": "Medical Devices",
+      "averageLife": 20,
+      "sop": "1. Safely decommission per regulations\n2. Radioactive source removal (specialized)\n3. Disassemble housing carefully\n4. Extract electronic components\n5. Segregate materials per regulations",
+      "segregationDetails": {
+        "radioactive": "Cobalt-60, Cesium-137 - HAZARDOUS (specialized handling)",
+        "steel": "2000-4000 g/kg",
+        "copper": "150-300 g/kg",
+        "gold": "0.5-2 g/kg",
+        "lead": "Shielding - Heavy metal"
+      },
+      "description": "Radiotherapy treatment systems"
+    },
+    {
+      "id": "MDW2",
+      "categoryName": "Cardiology Equipment",
+      "section": "Medical Devices",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power and patient connections\n2. Remove electrodes and sensors\n3. Disassemble casing\n4. Extract PCBs and components\n5. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "40-80 g/kg",
+        "plastics": "150-250 g/kg",
+        "electrodes": "May contain biofilm - hazardous"
+      },
+      "description": "Heart and cardiology diagnostic systems"
+    },
+    {
+      "id": "MDW3",
+      "categoryName": "Dialysis Equipment",
+      "section": "Medical Devices",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power and fluid lines\n2. Drain and flush all lines\n3. Remove filter cartridges\n4. Disassemble pumps\n5. Extract electronic components\n6. Segregate materials",
+      "segregationDetails": {
+        "copper": "100-200 g/kg",
+        "steel": "1000-2000 g/kg",
+        "gold": "0.5-2 g/kg",
+        "biohazardous": "Fluid residue - hazardous"
+      },
+      "description": "Blood dialysis and filtration systems"
+    },
+    {
+      "id": "MDW4",
+      "categoryName": "Pulmonary Ventilators",
+      "section": "Medical Devices",
+      "averageLife": "7-10",
+      "sop": "1. Safely power down\n2. Disconnect from patient and power\n3. Disinfect per protocols\n4. Remove air tubing\n5. Extract motors and electronic components\n6. Segregate materials",
+      "segregationDetails": {
+        "copper": "150-250 g/kg",
+        "steel": "1000-2000 g/kg",
+        "aluminum": "200-300 g/kg",
+        "gold": "0.5-2 g/kg",
+        "biohazardous": "Internal surface - hazardous"
+      },
+      "description": "Mechanical ventilation and respiratory support. Life: 7 years (Anaesthesia), 10 years (Diagnostic Cardiology)"
+    },
+    {
+      "id": "MDW5",
+      "categoryName": "Nuclear Medicine Equipment",
+      "section": "Medical Devices",
+      "averageLife": 20,
+      "sop": "1. Specialized decommissioning required\n2. Radioactive source removal\n3. Disassemble shielding carefully\n4. Extract electronics\n5. Segregate per nuclear regulations",
+      "segregationDetails": {
+        "radioactive": "Tc-99m, I-131 - HAZARDOUS (specialized)",
+        "lead": "Shielding - 2000-4000 g/kg",
+        "copper": "100-200 g/kg",
+        "gold": "0.5-2 g/kg"
+      },
+      "description": "Radioactive isotope imaging systems"
+    },
+    {
+      "id": "MDW6",
+      "categoryName": "Laboratory Diagnostic Equipment",
+      "section": "Medical Devices",
+      "averageLife": 15,
+      "sop": "1. Safely disconnect from power and reagents\n2. Clean and disinfect\n3. Remove sample trays\n4. Extract motors and pumps\n5. Remove electronic components\n6. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "50-100 g/kg",
+        "steel": "500-1000 g/kg",
+        "chemical": "Reagent residue - hazardous"
+      },
+      "description": "In-vitro diagnostic laboratory equipment"
+    },
+    {
+      "id": "MDW7",
+      "categoryName": "Analysers",
+      "section": "Medical Devices",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power and sample lines\n2. Flush all tubing\n3. Disassemble detection module\n4. Remove optical components\n5. Extract electronic components\n6. Segregate materials",
+      "segregationDetails": {
+        "gold": "2-5 g/kg",
+        "silver": "5-10 g/kg",
+        "copper": "60-120 g/kg",
+        "glass": "200-400 g/kg",
+        "chemical": "Residue - hazardous"
+      },
+      "description": "Medical analysis and detection equipment"
+    },
+    {
+      "id": "MDW8",
+      "categoryName": "MRI, PET/CT, SPECT, Ultrasound Equipment",
+      "section": "Medical Devices",
+      "averageLife": "7-20",
+      "sop": "1. Follow strict decommissioning protocols\n2. For MRI: Carefully demagnetize\n3. For PET/CT/SPECT: Remove radioactive sources\n4. Drain cooling fluids\n5. Disassemble major components\n6. Extract electronics\n7. Segregate per type",
+      "segregationDetails": {
+        "MRI": "Superconducting magnet - rare earth elements, lead, cryogenic fluid (Hazardous)",
+        "PET/CT": "Radioactive sources - hazardous (20 years)",
+        "SPECT": "Radioactive collimator - hazardous (20 years)",
+        "CT": "X-ray tube components - hazardous (20 years)",
+        "ultrasound": "Piezoelectric crystals - special handling (7 years)"
+      },
+      "description": "Advanced medical imaging systems"
+    },
+    {
+      "id": "MDW9",
+      "categoryName": "Fertilization Test Equipment",
+      "section": "Medical Devices",
+      "averageLife": 10,
+      "sop": "1. Disconnect from power\n2. Remove slides and specimens\n3. Clean and disinfect\n4. Extract optical components\n5. Remove electronic parts\n6. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-2 g/kg",
+        "silver": "2-5 g/kg",
+        "copper": "30-60 g/kg",
+        "glass": "200-300 g/kg",
+        "biohazardous": "Specimen residue - hazardous"
+      },
+      "description": "Fertility and reproductive medicine equipment"
+    },
+    {
+      "id": "MDW10",
+      "categoryName": "General Medical Appliances and Devices",
+      "section": "Medical Devices",
+      "averageLife": "7-15",
+      "sop": "1. Disconnect from power and patient connections\n2. Clean and disinfect per protocols\n3. Remove sensors and electrodes\n4. Disassemble casing\n5. Extract electronic components\n6. Segregate materials properly",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "40-100 g/kg",
+        "biohazardous": "Internal surfaces - hazardous",
+        "x-ray": "X-ray tube components - hazardous (10 years)"
+      },
+      "description": "Various medical diagnostic and treatment devices. Includes: Maternal/Infant care (7), C-Arm (7), Monitoring (15), X-ray (10), Mammography (10), Others (7)"
+    },
+    {
+      "id": "LIW1",
+      "categoryName": "Gas Analyser",
+      "section": "Laboratory Instruments",
+      "averageLife": 8,
+      "sop": "1. Disconnect from power and gas lines\n2. Purge all tubing\n3. Remove sensors carefully\n4. Extract electronic components\n5. Remove display and controls\n6. Segregate materials",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "40-80 g/kg",
+        "glass": "150-250 g/kg",
+        "hazardous": "Gas residue in tubing"
+      },
+      "description": "Gas analysis laboratory equipment"
+    },
+    {
+      "id": "LIW2",
+      "categoryName": "Equipment with Electrical and Electronic Components",
+      "section": "Laboratory Instruments",
+      "averageLife": 8,
+      "sop": "1. Disconnect from all power and connections\n2. Clean and disinfect if needed\n3. Remove detachable parts\n4. Disassemble casing\n5. Extract electronic components\n6. Segregate materials by type",
+      "segregationDetails": {
+        "gold": "1-3 g/kg",
+        "silver": "3-8 g/kg",
+        "copper": "50-100 g/kg",
+        "glass": "100-300 g/kg",
+        "rare metals": "Variable by equipment type"
+      },
+      "description": "General laboratory instruments with electronics"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "COL001": {
+    "id": "COL001",
+    "name": "College of Arts",
+    "departments": [
+      { "id": "DEPT-ARTS-001", "name": "History" },
+      { "id": "DEPT-ARTS-002", "name": "Philosophy" },
+      { "id": "DEPT-ARTS-003", "name": "English" },
+      { "id": "DEPT-ARTS-004", "name": "Punjabi" }
+    ]
+  },
+  "COL002": {
+    "id": "COL002",
+    "name": "College of Science",
+    "departments": [
+      { "id": "DEPT-SCI-001", "name": "Physics" },
+      { "id": "DEPT-SCI-002", "name": "Chemistry" },
+      { "id": "DEPT-SCI-003", "name": "Botany" },
+      { "id": "DEPT-SCI-004", "name": "Zoology" },
+      { "id": "DEPT-SCI-005", "name": "Mathematics" }
+    ]
+  },
+  "COL003": {
+    "id": "COL003",
+    "name": "College of Commerce",
+    "departments": [
+      { "id": "DEPT-COM-001", "name": "Accounting" },
+      { "id": "DEPT-COM-002", "name": "Economics" },
+      { "id": "DEPT-COM-003", "name": "Business Studies" }
+    ]
+  },
+  "COL004": {
+    "id": "COL004",
+    "name": "College of Engineering",
+    "departments": [
+      { "id": "DEPT-ENG-001", "name": "Computer Science" },
+      { "id": "DEPT-ENG-002", "name": "Civil Engineering" },
+      { "id": "DEPT-ENG-003", "name": "Electrical Engineering" },
+      { "id": "DEPT-ENG-004", "name": "Mechanical Engineering" }
+    ]
+  },
+  "COL005": {
+    "id": "COL005",
+    "name": "College of Education",
+    "departments": [
+      { "id": "DEPT-EDU-001", "name": "Teacher Training" },
+      { "id": "DEPT-EDU-002", "name": "Educational Technology" }
+    ]
+  },
+  "COL006": {
+    "id": "COL006",
+    "name": "School of Law",
+    "departments": [
+      { "id": "DEPT-LAW-001", "name": "Constitutional Law" },
+      { "id": "DEPT-LAW-002", "name": "Corporate Law" }
+    ]
+  }
+}
