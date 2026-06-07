@@ -79,8 +79,8 @@ export function Header() {
               </svg>
             </div>
             <div>
-              <div className="text-sm font-semibold text-slate-800 leading-tight uppercase tracking-wider">Central Pollution Control Board</div>
-              <div className="text-[11px] text-slate-500 font-medium">Ministry of Environment, Forest &amp; Climate Change, Govt. of India</div>
+              <div className="text-sm font-semibold text-slate-800 leading-tight uppercase tracking-wider">PU-EWMP</div>
+              <div className="text-[11px] text-slate-500 font-medium">Panjab University E-Waste Management Portal</div>
             </div>
           </div>
           
