@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Building2, CheckCircle2, ChevronRight, Search, Users } from 'lucide-react';
+import { ArrowRight, Building2, CheckCircle2, ChevronRight, Search, FileText, BarChart3, ShieldAlert, Check } from 'lucide-react';
 import { useEWaste } from '../context/EWasteContext';
 
 export function CollegeSelection() {
@@ -10,222 +10,200 @@ export function CollegeSelection() {
   const [selectedCollege, setSelectedCollege] = useState(null);
   const [selectedDept, setSelectedDept] = useState(null);
   const [collegeQuery, setCollegeQuery] = useState('');
-  const [deptQuery, setDeptQuery] = useState('');
 
   const handleCollegeSelect = (collegeId) => {
     setSelectedCollege(collegeId);
     setSelectedDept(null);
-    setDeptQuery('');
-  };
-
-  const handleDepartmentSelect = (departmentId) => {
-    setSelectedDept(departmentId);
   };
 
   const handleProceed = () => {
     if (selectedCollege) {
-      setActive(selectedCollege, selectedDept || null);
+      // Default to the first department if there's only one, otherwise null
+      const depts = getDepartmentsByCollege(selectedCollege);
+      const deptId = depts.length === 1 ? depts[0].id : selectedDept;
+      setActive(selectedCollege, deptId || null);
       navigate('/dashboard');
     }
   };
 
   const currentCollege = selectedCollege ? colleges.find(c => c.id === selectedCollege) : null;
   const currentDepts = selectedCollege ? getDepartmentsByCollege(selectedCollege) : [];
-  const filteredColleges = colleges.filter((college) =>
-    college.name.toLowerCase().includes(collegeQuery.toLowerCase())
-  );
-  const filteredDepts = currentDepts.filter((dept) =>
-    dept.name.toLowerCase().includes(deptQuery.toLowerCase())
-  );
-  const selectedDepartmentName = selectedDept
-    ? currentDepts.find((dept) => dept.id === selectedDept)?.name
-    : 'All Departments (College View)';
+  const filteredColleges = colleges.filter(c => c.name.toLowerCase().includes(collegeQuery.toLowerCase()));
+
+  // Simulated metrics for the landing dashboard
+  const metrics = [
+    { label: 'E-Waste Logged', value: '1,420 kg', desc: 'Verified across regional institutions', color: 'emerald', icon: BarChart3 },
+    { label: 'Registered Units', value: '10 Colleges', desc: 'Registered academic units', color: 'blue', icon: Building2 },
+    { label: 'EPR Target Met', value: '82.4 %', desc: 'Average compliance rate 2025-26', color: 'amber', icon: CheckCircle2 }
+  ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-eco-50 to-white">
-      {/* PU Header */}
-      <div className="bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center gap-3">
-            <Building2 className="w-8 h-8 text-eco-600" />
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">Panjab University</h1>
-              <p className="text-xs text-gray-600">E-Waste Management System</p>
-            </div>
-          </div>
+    <div className="min-h-screen bg-[#f8fafc] pb-16">
+      {/* Hero Header Section */}
+      <div className="bg-gradient-to-b from-slate-900 to-slate-950 text-white py-16 px-4 mb-10 shadow-md">
+        <div className="max-w-7xl mx-auto text-center">
+          <span className="bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider mb-4 inline-block">
+            Compliance & Stewardship Portal
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+            E-Waste Inventory & EPR Management
+          </h1>
+          <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+            Centralized registry for public universities to audit, track, and process electrical & electronic waste in compliance with E-Waste (Management) Rules, 2022.
+          </p>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Welcome to PU E-Waste Hub</h2>
-          <p className="text-gray-600 text-lg">Select your college and department to manage e-waste</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Dynamic National E-Waste Stats Panel */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {metrics.map((m) => {
+            const Icon = m.icon;
+            return (
+              <div key={m.label} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm flex items-start gap-4">
+                <div className={`p-3 rounded-xl bg-slate-50 text-emerald-800 border border-slate-100 flex-shrink-0`}>
+                  <Icon className="w-6 h-6" />
+                </div>
+                <div>
+                  <span className="text-xs font-semibold text-slate-500 block uppercase tracking-wider mb-1">{m.label}</span>
+                  <span className="text-3xl font-extrabold text-slate-900 block leading-none mb-1.5">{m.value}</span>
+                  <span className="text-xs text-slate-400 font-medium block">{m.desc}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        <div className="card mb-8 border-l-4 border-l-eco-500">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className={`rounded-lg border px-4 py-3 ${selectedCollege ? 'border-eco-300 bg-eco-50' : 'border-gray-200 bg-white'}`}>
-              <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Step 1</p>
-              <p className="font-semibold text-gray-900">Choose College</p>
-              <p className="text-sm text-gray-600 mt-1">{selectedCollege ? currentCollege?.name : 'Pending'}</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          
+          {/* Left Side: Directives and Notices */}
+          <div className="lg:col-span-2 space-y-6">
+            {/* Kind Attention Notice Card */}
+            <div className="card border-l-4 border-l-emerald-700 bg-white">
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-emerald-50 text-emerald-800 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-100">
+                  <FileText className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-900 text-lg mb-1.5">Kind Attention to Affiliated Institutions</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    As per **Rule 6(2)** of the E-Waste (Management) Rules, 2022, all departments and affiliate universities are mandated to report electronic asset lifecycles, maintain the EEE Segregation Database, and clear disposal schedules through this portal.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className={`rounded-lg border px-4 py-3 ${selectedCollege ? 'border-eco-300 bg-eco-50' : 'border-gray-200 bg-white'}`}>
-              <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Step 2</p>
-              <p className="font-semibold text-gray-900">Choose Department</p>
-              <p className="text-sm text-gray-600 mt-1">{selectedCollege ? selectedDepartmentName : 'Choose college first'}</p>
-            </div>
-            <div className={`rounded-lg border px-4 py-3 ${selectedCollege ? 'border-eco-300 bg-eco-50' : 'border-gray-200 bg-white'}`}>
-              <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Step 3</p>
-              <p className="font-semibold text-gray-900">Open Dashboard</p>
-              <p className="text-sm text-gray-600 mt-1">{selectedCollege ? 'Ready to proceed' : 'Complete step 1 first'}</p>
+
+            {/* Official Portal Features Guide */}
+            <div className="card bg-white">
+              <h3 className="font-bold text-slate-900 text-lg mb-4">Portal Workflow Steps</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <span className="w-7 h-7 bg-slate-200 text-slate-700 font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">1</span>
+                  <div className="font-bold text-sm text-slate-800 mb-1">Select College</div>
+                  <p className="text-xs text-slate-500">Choose your academic institute from the list.</p>
+                </div>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <span className="w-7 h-7 bg-slate-200 text-slate-700 font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">2</span>
+                  <div className="font-bold text-sm text-slate-800 mb-1">Audit Assets</div>
+                  <p className="text-xs text-slate-500">Log e-waste category items and assign locations.</p>
+                </div>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <span className="w-7 h-7 bg-slate-200 text-slate-700 font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">3</span>
+                  <div className="font-bold text-sm text-slate-800 mb-1">Sync with CPCB</div>
+                  <p className="text-xs text-slate-500">Generate compliance codes automatically.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* College Selection */}
-          <div className="card">
-            <div className="flex items-center gap-2 mb-6">
-              <Building2 className="w-6 h-6 text-eco-600" />
-              <h3 className="text-xl font-bold text-gray-900">Select College</h3>
+          {/* Right Side: College Selection Audit */}
+          <div className="space-y-6">
+            {/* SSO Alert Box */}
+            <div className="bg-[#fef2f2] border border-[#fca5a5]/30 rounded-2xl p-5 flex items-start gap-4">
+              <div className="p-2.5 bg-red-100 text-red-700 rounded-xl flex-shrink-0">
+                <ShieldAlert className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-bold text-red-900 text-sm mb-1">Direct SSO Notice</h4>
+                <p className="text-xs text-red-700 leading-normal">
+                  Registered Producers must authenticate compliance certificates via the national CPCB Single Sign-On link.
+                </p>
+              </div>
             </div>
-            <div className="relative mb-4">
-              <Search className="w-4 h-4 text-gray-400 absolute left-3 top-3" />
-              <input
-                value={collegeQuery}
-                onChange={(e) => setCollegeQuery(e.target.value)}
-                className="input-field pl-9"
-                placeholder="Search college/faculty..."
-              />
-            </div>
-            <div className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
-              {filteredColleges.map(college => (
-                <button
-                  key={college.id}
-                  onClick={() => handleCollegeSelect(college.id)}
-                  className={`w-full p-4 rounded-lg border-2 transition-all text-left font-medium ${
-                    selectedCollege === college.id
-                      ? 'border-eco-600 bg-eco-50 text-eco-900'
-                      : 'border-gray-200 bg-white text-gray-700 hover:border-eco-300'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span>{college.name}</span>
-                    {selectedCollege === college.id && (
-                      <ChevronRight className="w-5 h-5 text-eco-600" />
-                    )}
-                  </div>
-                </button>
-              ))}
-            </div>
-            {filteredColleges.length === 0 && (
-              <div className="text-sm text-gray-500 text-center py-4">No colleges match your search.</div>
-            )}
-          </div>
 
-          {/* Department Selection */}
-          <div className="card">
-            <div className="flex items-center gap-2 mb-6">
-              <Users className="w-6 h-6 text-eco-600" />
-              <h3 className="text-xl font-bold text-gray-900">Select Department</h3>
-            </div>
-            {selectedCollege ? (
-              <div className="space-y-3">
-                <div className="p-3 bg-eco-50 rounded-lg border border-eco-200 mb-4">
-                  <p className="text-sm text-gray-600">College:</p>
-                  <p className="font-semibold text-gray-900">{currentCollege?.name}</p>
-                </div>
-                <div className="flex gap-2 mb-2">
-                  <button
-                    onClick={() => {
-                      setSelectedCollege(null);
-                      setSelectedDept(null);
-                      setDeptQuery('');
-                    }}
-                    className="btn-secondary inline-flex items-center gap-2"
-                    type="button"
-                  >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back to Colleges
-                  </button>
-                </div>
-                <div className="relative mb-2">
-                  <Search className="w-4 h-4 text-gray-400 absolute left-3 top-3" />
-                  <input
-                    value={deptQuery}
-                    onChange={(e) => setDeptQuery(e.target.value)}
-                    className="input-field pl-9"
-                    placeholder="Search department/unit..."
-                  />
-                </div>
-                <button
-                  onClick={() => handleDepartmentSelect(null)}
-                  className={`w-full p-4 rounded-lg border-2 transition-all text-left font-medium ${
-                    selectedDept === null
-                      ? 'border-eco-600 bg-eco-50 text-eco-900'
-                      : 'border-gray-200 bg-white text-gray-700 hover:border-eco-300'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span>All Departments (College View)</span>
-                    {selectedDept === null && (
-                      <ChevronRight className="w-5 h-5 text-eco-600" />
-                    )}
-                  </div>
-                </button>
-                {currentDepts.length > 0 ? (
-                  <div className="space-y-3">
-                    {filteredDepts.map(dept => (
-                      <button
-                        key={dept.id}
-                        onClick={() => handleDepartmentSelect(dept.id)}
-                        className={`w-full p-4 rounded-lg border-2 transition-all text-left font-medium ${
-                          selectedDept === dept.id
-                            ? 'border-eco-600 bg-eco-50 text-eco-900'
-                            : 'border-gray-200 bg-white text-gray-700 hover:border-eco-300'
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <span>{dept.name}</span>
-                          {selectedDept === dept.id && (
-                            <ChevronRight className="w-5 h-5 text-eco-600" />
-                          )}
+            {/* Selection Container */}
+            <div className="card bg-white">
+              <h4 className="font-bold text-slate-900 text-lg mb-3 flex items-center justify-between">
+                <span>Select Institution</span>
+                <span className="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-medium">Demo Mode</span>
+              </h4>
+              
+              {/* Search Bar */}
+              <div className="relative mb-4">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                <input 
+                  value={collegeQuery} 
+                  onChange={(e) => setCollegeQuery(e.target.value)} 
+                  className="w-full pl-9 pr-4 py-2.5 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-sm shadow-sm" 
+                  placeholder="Search by state or college name..." 
+                />
+              </div>
+
+              {/* Institution Options List */}
+              <div className="space-y-2 max-h-[260px] overflow-y-auto pr-1">
+                {filteredColleges.map(col => {
+                  const isSelected = selectedCollege === col.id;
+                  return (
+                    <button 
+                      key={col.id} 
+                      onClick={() => handleCollegeSelect(col.id)} 
+                      className={`w-full p-3.5 text-left rounded-xl border transition-all duration-200 flex items-center justify-between ${
+                        isSelected 
+                          ? 'border-emerald-600 bg-emerald-50/50 shadow-inner' 
+                          : 'border-slate-100 hover:border-slate-300 bg-white'
+                      }`}
+                    >
+                      <div className="pr-2">
+                        <div className={`font-semibold text-sm ${isSelected ? 'text-emerald-950' : 'text-slate-800'}`}>
+                          {col.name}
                         </div>
-                      </button>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 text-center">
-                    <p className="text-gray-600">Please select a college first</p>
-                  </div>
-                )}
-                {currentDepts.length > 0 && filteredDepts.length === 0 && (
-                  <div className="text-sm text-gray-500 text-center py-2">No departments match your search.</div>
+                        <div className="text-xs text-slate-500 mt-0.5">{col.state}</div>
+                      </div>
+                      {isSelected && (
+                        <div className="w-5 h-5 bg-emerald-700 rounded-full flex items-center justify-center text-white flex-shrink-0">
+                          <Check className="w-3.5 h-3.5" />
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+                {filteredColleges.length === 0 && (
+                  <p className="text-xs text-slate-500 py-6 text-center">No institutions found matching your search</p>
                 )}
               </div>
-            ) : (
-              <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 text-center">
-                <p className="text-gray-600">Please select a college first</p>
+
+              {/* Proceed Control */}
+              <div className="mt-5 pt-4 border-t border-slate-100">
+                <button 
+                  onClick={handleProceed} 
+                  disabled={!selectedCollege} 
+                  className={`w-full py-3 rounded-xl font-bold transition-all duration-200 flex items-center justify-center gap-2 ${
+                    selectedCollege 
+                      ? 'bg-emerald-800 text-white hover:bg-emerald-900 shadow-md hover:shadow-lg active:scale-[0.99]' 
+                      : 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                  }`}
+                >
+                  Proceed to Portal
+                  <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
-            )}
+            </div>
+
           </div>
+
         </div>
 
-        {/* Proceed Button */}
-        <div className="mt-12 flex justify-center">
-          <button
-            onClick={handleProceed}
-            disabled={!selectedCollege}
-            className={`px-8 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 shadow-sm ${
-              selectedCollege
-                ? 'bg-eco-600 text-white hover:bg-eco-700 cursor-pointer'
-                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-            }`}
-          >
-            {selectedCollege ? 'Proceed to Dashboard' : 'Select college to continue'}
-            {selectedCollege ? <CheckCircle2 className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
-          </button>
-        </div>
       </div>
     </div>
   );

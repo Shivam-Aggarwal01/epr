@@ -1,6 +1,7 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 import categoriesData from '../data/eeeCategories.json';
 import { PU_COLLEGES } from '../data/puColleges';
+import HOST_TOKEN_MAP from '../data/hostMapping';
 
 const EWasteContext = createContext(undefined);
 
@@ -22,8 +23,8 @@ export function EWasteProvider({ children }) {
       images: [],
       serialNumber: 'SN-12345',
       modelNumber: 'HP-ProBook-450',
-      collegeId: 'COL-005',
-      departmentId: 'DEPT-005-002-UNIVERSITY-INSTITUTE-OF-ENGINEERING',
+      collegeId: 'COL-001',
+      departmentId: 'DEPT-001-001-MAIN',
     },
     {
       id: '2',
@@ -37,8 +38,8 @@ export function EWasteProvider({ children }) {
       images: [],
       serialNumber: 'SN-67890',
       modelNumber: 'Inverter-2KVA',
-      collegeId: 'COL-010',
-      departmentId: 'DEPT-010-022-PHYSICS',
+      collegeId: 'COL-002',
+      departmentId: 'DEPT-002-001-MAIN',
     },
     {
       id: '3',
@@ -52,10 +53,35 @@ export function EWasteProvider({ children }) {
       images: [],
       serialNumber: 'SN-11111',
       modelNumber: 'LG-WM-2000',
-      collegeId: 'COL-015',
-      departmentId: 'DEPT-015-001-A-C-JOSHI-LIBRARY',
+      collegeId: 'COL-003',
+      departmentId: 'DEPT-003-001-MAIN',
     },
   ]);
+
+  // Auto-detect host and set active college for Netlify demo.
+  useEffect(() => {
+    try {
+      if (typeof window === 'undefined') return;
+      const host = window.location.hostname.toLowerCase();
+      if (!host) return;
+
+      // If already selected, skip
+      if (selectedCollege) return;
+
+      // Check token map: if host contains token, set that college active
+      for (const mapping of HOST_TOKEN_MAP) {
+        if (host.includes(mapping.token)) {
+          setSelectedCollege(mapping.collegeId);
+          setSelectedDepartment(null);
+          // persist a simple demo token
+          try { localStorage.setItem('epr_demo_token', JSON.stringify({ college: mapping.collegeId })); } catch (e) {}
+          break;
+        }
+      }
+    } catch (err) {
+      // ignore errors in demo mode
+    }
+  }, []); 
 
   const [categories, setCategories] = useState(categoriesData.categories);
 
